@@ -13,7 +13,7 @@ def ratio(els,ms):
     M=E.mass(els[i])
     n=ms[i]/M
     mol.append(n)
-    out(" "+els[i]+": "+f(ms[i])+"/"+g(M)+" = "+f(n))
+    out(" "+els[i]+": "+f(ms[i])+"/"+f(M)+" = "+f(n))
   sm=min(mol)
   out("3) divide by smallest ("+f(sm)+"):")
   r=[x/sm for x in mol]
